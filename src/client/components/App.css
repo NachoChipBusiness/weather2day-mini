@@ -1,0 +1,17 @@
+.slider.timespanner .MuiSlider-thumb {
+  background: transparent;
+  background-color: #fff;
+  background-image: url("https://em-content.zobj.net/source/microsoft-teams/363/twelve-thirty_1f567.png");
+  background-size: cover;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.slider.framer .MuiSlider-thumb {
+  background: transparent;
+  background-color: #1976d230;
+  background-image: url("https://emojio.ru/images/apple-b/2601-fe0f.png");
+  background-size: cover;
+  height: 1.5em;
+  width: 1.5em;
+}
