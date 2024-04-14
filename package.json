@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/server/main.js -w src/server",
-    "start": "cross-env NODE_ENV=production node src/server/main.js",
-    "build:client": "vite build --outDir dist/client",
+    "dev": "concurrently --kill-others \"vite --config src/client/vite.config.js\" \"nodemon src/server/main.js -w src/server\"",
+    "start": "cross-env NODE_ENV=production node dist/server/main.js",
+    "build:client": "vite build --config src/client/vite.config.js --outDir dist/client",
     "build:server": "vite build --ssr src/server/main.js --outDir dist/server",
     "build": "npm run build:client && npm run build:server",
     "preview": "vite preview"
